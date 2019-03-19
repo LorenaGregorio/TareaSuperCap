@@ -69,6 +69,8 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -129,12 +131,13 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "SI",
-            "NO"});
+            "TRUE",
+            "FALSE"});
             this.comboBox1.Location = new System.Drawing.Point(160, 62);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.Text = "Elija Opcion";
             // 
             // textBox1
             // 
@@ -222,8 +225,9 @@
             "OTRO"});
             this.comboBox2.Location = new System.Drawing.Point(160, 408);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(242, 21);
             this.comboBox2.TabIndex = 17;
+            this.comboBox2.Text = "Elija Opcion";
             // 
             // label10
             // 
@@ -254,12 +258,14 @@
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "SI",
-            "NO"});
+            "TRUE",
+            "FALSE"});
             this.comboBox3.Location = new System.Drawing.Point(160, 489);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 21;
+            this.comboBox3.Text = "Elija Opcion";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -391,6 +397,7 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(137, 21);
             this.comboBox4.TabIndex = 35;
+            this.comboBox4.Text = "Elija Opcion";
             // 
             // comboBox5
             // 
@@ -398,11 +405,13 @@
             this.comboBox5.Items.AddRange(new object[] {
             "Farmacologica",
             "Alimentos",
-            "Otro"});
+            "Otro",
+            "Ninguna"});
             this.comboBox5.Location = new System.Drawing.Point(576, 203);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(137, 21);
             this.comboBox5.TabIndex = 36;
+            this.comboBox5.Text = "Elija Opcion";
             // 
             // textBox10
             // 
@@ -429,6 +438,7 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(137, 21);
             this.comboBox6.TabIndex = 39;
+            this.comboBox6.Text = "Elija Opcion";
             // 
             // textBox12
             // 
@@ -437,11 +447,31 @@
             this.textBox12.Size = new System.Drawing.Size(137, 20);
             this.textBox12.TabIndex = 40;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(719, 72);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(42, 13);
+            this.label22.TabIndex = 41;
+            this.label22.Text = "Metros.";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(720, 116);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(38, 13);
+            this.label23.TabIndex = 42;
+            this.label23.Text = "Libras.";
+            // 
             // JugadorForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 515);
+            this.ClientSize = new System.Drawing.Size(826, 539);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.comboBox6);
             this.Controls.Add(this.textBox11);
@@ -534,5 +564,7 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
     }
 }

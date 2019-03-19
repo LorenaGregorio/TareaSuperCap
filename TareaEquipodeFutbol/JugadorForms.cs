@@ -32,14 +32,35 @@ namespace TareaEquipodeFutbol
             //{
 
             //}
+            //DetallesJugador detalles = new DetallesJugador();
 
             var jugador1 = new DetallesJugador
             {
+
+                                                             
                 //datos personales de jugador
                 Estatura = Convert.ToDouble(textBox8.Text),
-                Peso = Convert.ToDouble(textBox9.Text)
+                Peso = Convert.ToDouble(textBox9.Text),
+                GrupoSanguineo = comboBox4.Text,
+                Alergico = comboBox5.Text,
+                EnfermedadCondicion = textBox10.Text,
+                Lesiones = textBox11.Text,
+                Lateralidad = comboBox6.Text,
+                PosicionCampo = textBox12.Text,
 
                 //detalles jugador
+                JugadorNuevo = Convert.ToBoolean(comboBox1.Text),
+                Nombres = textBox1.Text,
+                Apellidos = textBox2.Text,
+                Direccion = textBox3.Text,
+                Telefono = textBox4.Text,
+                Email = textBox5.Text,
+                LugardeNacimiento = textBox6.Text,
+                FechadeNacimiento = Convert.ToDateTime(dateTimePicker1.Text),
+                Identificacion = comboBox2.Text,
+                NumerodeIdentificacionCUI = Convert.ToInt32(textBox7.Text),
+                JugadorRetira = Convert.ToBoolean(comboBox3.Text)
+
             };
 
             form1.AgregarJugadores(jugador1);
@@ -48,6 +69,11 @@ namespace TareaEquipodeFutbol
         }
 
         private void JugadorForms_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
