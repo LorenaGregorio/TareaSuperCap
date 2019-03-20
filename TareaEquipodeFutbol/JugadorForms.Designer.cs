@@ -71,6 +71,8 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -359,7 +361,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(552, 437);
+            this.button1.Location = new System.Drawing.Point(620, 447);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 53);
             this.button1.TabIndex = 32;
@@ -465,11 +467,36 @@
             this.label23.TabIndex = 42;
             this.label23.Text = "Libras.";
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(573, 470);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(16, 16);
+            this.label24.TabIndex = 43;
+            this.label24.Text = "0";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(302, 470);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(252, 16);
+            this.label25.TabIndex = 44;
+            this.label25.Text = "Cantidad de Jugadores Ingresados";
+            // 
             // JugadorForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(826, 539);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.textBox12);
@@ -566,5 +593,7 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
     }
 }

@@ -28,7 +28,13 @@ namespace TareaEquipodeFutbol
             dataGridView1.DataSource = bs;
             dataGridView1.Refresh();
 
+            borrar();
         }
+        private void borrar ()
+        {
+           
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {

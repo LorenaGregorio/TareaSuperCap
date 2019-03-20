@@ -27,12 +27,12 @@ namespace TareaEquipodeFutbol
 
         private void button1_Click(object sender, EventArgs e)
         {
+          
+            int contador =0;
+          
 
-            //if (listajugador1.Count)
-            //{
 
-            //}
-            //DetallesJugador detalles = new DetallesJugador();
+
 
             var jugador1 = new DetallesJugador
             {
@@ -61,10 +61,35 @@ namespace TareaEquipodeFutbol
                 NumerodeIdentificacionCUI = Convert.ToInt32(textBox7.Text),
                 JugadorRetira = Convert.ToBoolean(comboBox3.Text)
 
+               
             };
-
+           
+       
             form1.AgregarJugadores(jugador1);
 
+            contador = Convert.ToInt32(label24.Text) + 1;
+            label24.Text = contador.ToString();
+            borrar();
+         
+
+
+
+
+        }
+        private void borrar ()
+        {
+            textBox8.Clear();
+            textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
 
         }
 
@@ -74,6 +99,11 @@ namespace TareaEquipodeFutbol
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
         {
 
         }
